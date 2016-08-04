@@ -44,10 +44,9 @@ var generate = function () {
 pkg.version = updateVersion(versionChange, pkg.version, newVersionName);
 
 console.log(JSON.stringify(pkg, null, 2));
-/*
+
 fs.writeFile('./package.json', JSON.stringify(pkg, null, 2), function (err) {
 	if (err) {
 		return console.log(err);
 	}
 });
-*/
